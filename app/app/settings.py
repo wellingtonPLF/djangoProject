@@ -101,8 +101,8 @@ DATABASES = {
         'NAME': config('POSTGRES_DB', 'db'),
         'USER': config('POSTGRES_USER', 'postgres'),
         'PASSWORD': config('POSTGRES_PASSWORD', 'postgres'),
-        'HOST': config('DB_HOST', 'localhost'),
-        'PORT': '5400',
+        'HOST': config('DB_HOST', 'db'),
+        'PORT': '5432',
     }
 }
 
