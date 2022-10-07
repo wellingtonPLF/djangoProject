@@ -1,0 +1,13 @@
+#BackEndFramework
+Django==3.2.15
+
+#FrontFramework
+django-cors-headers==3.13.0
+djangorestframework==3.14.0
+
+#Postgresql
+psycopg2==2.9.3
+
+#Extra
+python-decouple==3.6
+django-extensions==3.2.1
