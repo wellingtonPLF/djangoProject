@@ -86,26 +86,25 @@ WSGI_APPLICATION = 'app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-"""
 
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': config('POSTGRES_DB', 'db'),
         'USER': config('POSTGRES_USER', 'postgres'),
         'PASSWORD': config('POSTGRES_PASSWORD', 'postgres'),
-        'HOST': config('DB_HOST', 'db'),
-        'PORT': '5432',
+        'HOST': config('DB_HOST', 'localhost'),
+        'PORT': '5400',
     }
 }
-
+"""
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators

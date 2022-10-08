@@ -2,11 +2,11 @@ version: "3"
 services:
   api:
     container_name: django
-    image: django-image:v2
+    image: django-image:v1
     build: .
-    command: ./wait-for-it-ux.sh pgadmin:80 -- python manage.py runserver 0.0.0.0:8000
+    command: ./wait-for-it.sh pgadmin:80 -- python manage.py runserver 0.0.0.0:8000
     ports:
-      - 8000:8000
+      - 8200:8000
     depends_on:
       - db
     networks:
@@ -14,7 +14,7 @@ services:
       
   db:
     container_name: db
-    image: w10ell10/postgres:v1
+    image: postgres:latest
     restart: always
     user: postgres
     volumes:
