@@ -37,6 +37,6 @@ python manage.py runserver
 - Connecting to postgres by pgadmin:
   - Go to localhost:5050
   - Pass a password that you'll remember
-  - Add a new server passing the name (can be a random name) 
-  - In connection tab use host as db and postgres as password;
+  - Add a new server passing a name (can be a random name) 
+  - In connection tab use db as host and postgres as password;
   - Apply and be happy.
